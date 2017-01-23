@@ -16,5 +16,14 @@ namespace PrintPicture
         {
             InitializeComponent();
         }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "JPEG | *.jpg", ValidateNames = true })
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                    pbPhotoCanvas.Image = Image.FromFile(ofd.FileName);
+            }
+        }
     }
 }
