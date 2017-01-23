@@ -1,2 +1,2 @@
 # PrintPicture
-An Windows Forms Application to open and print a picture
+An Windows Forms Application to open and print a picture (JPEG format)
